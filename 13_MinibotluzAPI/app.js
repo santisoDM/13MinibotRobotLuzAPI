@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const cors = require('cors');
 //require('./db.js');
-const updHan = require('../minibotluz_api/udpStuff/updHandler')
+const updHan = require('../13_MinibotluzAPI/udpStuff/updHandler')
 const server = express();
 
 server.name = 'API';
