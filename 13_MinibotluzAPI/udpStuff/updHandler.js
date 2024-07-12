@@ -15,6 +15,13 @@ updHan.post("/communication", async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
-});
+})
+.get("/", async(req, res)=>{
+  try{
+    res.status(200).json('TODO OK');
+  }catch(err){
+    res.status(400).json(err.message)
+  }
+})
 
 module.exports = updHan;
